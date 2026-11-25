@@ -1,0 +1,28 @@
+* text=auto
+
+*.cs text diff=csharp
+*.shader text
+*.hlsl text
+*.hlsli text
+*.uxml text
+*.uss text
+*.tss text
+
+*.unity text eol=lf
+*.prefab text eol=lf
+*.mat text eol=lf
+*.asset text eol=lf
+*.meta text eol=lf
+*.inputactions text eol=lf
+*.asmdef text eol=lf
+*.json text eol=lf
+
+*.png binary
+*.jpg binary
+*.psd binary
+*.fbx binary
+*.wav binary
+*.mp3 binary
+*.ogg binary
+*.ttf binary
+*.otf binary
