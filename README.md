@@ -2,7 +2,7 @@
 
 A tool for understanding why something in a game scene behaved the way it did (Unity), and visually debug and update the game scene. 
 
-CIS 4120 final project, Fall 2026.
+CIS 4120 final project, Fall 2026 (Bryan Chung, Ashley Park, Brian Lee) 
 
 ## Setup
 
