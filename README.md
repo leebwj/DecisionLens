@@ -6,4 +6,4 @@ CIS 4120 final project, Fall 2026.
 
 ## Setup
 
-1. Install Unity 6000.3.23f1 from Unity Hub.
+Install Unity 6000.3.23f1 from Unity Hub.
