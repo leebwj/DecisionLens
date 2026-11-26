@@ -1,0 +1,207 @@
+/* text */
+
+.unity-label {
+    margin: 0;
+    padding: 0;
+    color: var(--dl-text);
+    font-size: var(--dl-font-body);
+}
+
+.title {
+    font-size: var(--dl-font-title);
+    -unity-font-style: bold;
+}
+
+.subtitle {
+    margin-top: var(--dl-space-2);
+    color: var(--dl-muted);
+}
+
+.heading {
+    font-size: var(--dl-font-heading);
+    -unity-font-style: bold;
+}
+
+.caption {
+    font-size: var(--dl-font-small);
+    color: var(--dl-muted);
+}
+
+.is-hidden {
+    display: none;
+}
+
+/* keeps its space so the layout around it doesn't move */
+.is-blank {
+    visibility: hidden;
+}
+
+/* layout */
+
+.app {
+    flex-grow: 1;
+    flex-direction: row;
+}
+
+.tab-strip {
+    flex-direction: row;
+    flex-shrink: 0;
+    height: 36px;
+    background-color: var(--dl-toolbar);
+}
+
+.tab {
+    padding: 0 var(--dl-space-12);
+    -unity-text-align: middle-left;
+}
+
+.tab--active {
+    background-color: var(--dl-window);
+}
+
+/* hierarchy */
+
+.hierarchy {
+    flex-shrink: 0;
+    width: 200px;
+    background-color: var(--dl-base);
+}
+
+.hierarchy__scene {
+    height: 28px;
+    margin-top: var(--dl-space-4);
+    padding-left: var(--dl-space-12);
+    -unity-text-align: middle-left;
+    -unity-font-style: bold;
+}
+
+.hierarchy__row {
+    height: 28px;
+    padding-left: 28px;
+    -unity-text-align: middle-left;
+}
+
+.hierarchy__row:hover {
+    background-color: var(--dl-window);
+}
+
+.hierarchy__row--selected,
+.hierarchy__row--selected:hover {
+    background-color: var(--dl-selected);
+}
+
+/* scene */
+
+.scene {
+    flex-grow: 1;
+}
+
+.scene__header {
+    flex-direction: row;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: space-between;
+    height: 42px;
+    padding: 0 var(--dl-space-16);
+    background-color: var(--dl-window);
+}
+
+.scene__viewport {
+    flex-grow: 1;
+}
+
+/* fixed height so the scene above never resizes when the text changes */
+.scene__target {
+    flex-shrink: 0;
+    justify-content: center;
+    height: 60px;
+    padding: 0 var(--dl-space-16);
+    background-color: var(--dl-field);
+}
+
+.scene__target .caption {
+    margin-bottom: var(--dl-space-4);
+}
+
+/* decision lens */
+
+.lens {
+    flex-shrink: 0;
+    width: 420px;
+    background-color: var(--dl-window);
+}
+
+.lens__content {
+    padding: 20px 24px;
+}
+
+.lens__note {
+    margin-top: var(--dl-space-12);
+    padding: var(--dl-space-8) var(--dl-space-12);
+    border-left-width: 2px;
+    border-left-color: var(--dl-blue);
+    background-color: var(--dl-field);
+    white-space: normal;
+}
+
+.lens__hint {
+    padding: 20px 24px;
+    color: var(--dl-muted);
+    white-space: normal;
+}
+
+.lens__section {
+    margin-top: 24px;
+    margin-bottom: var(--dl-space-8);
+}
+
+.table__head,
+.table__row {
+    flex-direction: row;
+    align-items: center;
+    border-bottom-width: 1px;
+    border-bottom-color: var(--dl-border);
+}
+
+.table__head {
+    height: 26px;
+}
+
+.table__head .table__cell {
+    font-size: var(--dl-font-small);
+    color: var(--dl-muted);
+}
+
+.table__row {
+    height: 32px;
+}
+
+.table__row--target {
+    background-color: var(--dl-selected);
+}
+
+.table__cell {
+    padding-left: var(--dl-space-4);
+}
+
+.table__cell--candidate {
+    width: 83px;
+}
+
+.table__cell--distance {
+    width: 59px;
+}
+
+.table__cell--sight {
+    width: 101px;
+}
+
+.table__cell--priority {
+    width: 60px;
+}
+
+.table__cell--result {
+    flex-grow: 1;
+    padding-right: var(--dl-space-16);
+    -unity-text-align: middle-right;
+}

@@ -1,0 +1,32 @@
+:root {
+    --dl-app: #191919;
+    --dl-base: #282828;
+    --dl-window: #383838;
+    --dl-toolbar: #3C3C3C;
+    --dl-field: #2A2A2A;
+    --dl-border: #232323;
+    --dl-scene: #45494D;
+    --dl-control: #585858;
+    --dl-control-border: #8C8C8C;
+    --dl-hover: #676767;
+    --dl-pressed: #46607C;
+    --dl-disabled: #7A7A7A;
+    --dl-selected: #2C5D87;
+    --dl-text: #D2D2D2;
+    --dl-muted: #BDBDBD;
+    --dl-button-text: #EEEEEE;
+    --dl-blue: #7BAEFA;
+    --dl-green: #9BC5A6;
+    --dl-red: #E9A29C;
+
+    --dl-space-2: 2px;
+    --dl-space-4: 4px;
+    --dl-space-8: 8px;
+    --dl-space-12: 12px;
+    --dl-space-16: 16px;
+
+    --dl-font-title: 24px;
+    --dl-font-heading: 14px;
+    --dl-font-body: 12px;
+    --dl-font-small: 11px;
+}

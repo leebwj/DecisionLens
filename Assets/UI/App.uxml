@@ -1,0 +1,55 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <Style src="Tokens.uss" />
+    <Style src="App.uss" />
+    <ui:VisualElement name="app" class="app">
+
+        <ui:VisualElement name="hierarchy" class="hierarchy">
+            <ui:VisualElement class="tab-strip">
+                <ui:Label text="Hierarchy" class="tab tab--active" />
+            </ui:VisualElement>
+            <ui:Label name="scene-name" class="hierarchy__scene" />
+            <ui:VisualElement name="hierarchy-rows" />
+        </ui:VisualElement>
+
+        <ui:VisualElement class="scene">
+            <ui:VisualElement class="tab-strip">
+                <ui:Label text="Scene" class="tab tab--active" />
+            </ui:VisualElement>
+            <ui:VisualElement class="scene__header">
+                <ui:Label text="Scene View" class="heading" />
+                <ui:Label text="Persp" class="caption" />
+            </ui:VisualElement>
+            <ui:VisualElement name="viewport" class="scene__viewport" />
+            <ui:VisualElement name="target-strip" class="scene__target">
+                <ui:VisualElement name="target-info" class="is-blank">
+                    <ui:Label text="TARGET" class="caption" />
+                    <ui:Label name="target-name" class="heading" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <ui:VisualElement name="lens" class="lens">
+            <ui:VisualElement class="tab-strip">
+                <ui:Label text="Decision Lens" class="tab tab--active" />
+            </ui:VisualElement>
+            <ui:VisualElement name="lens-content" class="lens__content is-hidden">
+                <ui:Label name="selected-name" class="title" />
+                <ui:Label text="Edit Mode" class="subtitle" />
+                <ui:VisualElement name="lens-notes" />
+                <ui:VisualElement name="decision-table">
+                    <ui:Label text="Candidates" class="heading lens__section" />
+                    <ui:VisualElement class="table__head">
+                        <ui:Label text="Candidate" class="table__cell table__cell--candidate" />
+                        <ui:Label text="Distance" class="table__cell table__cell--distance" />
+                        <ui:Label text="Line Of Sight" class="table__cell table__cell--sight" />
+                        <ui:Label text="Priority" class="table__cell table__cell--priority" />
+                        <ui:Label text="Result" class="table__cell table__cell--result" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="candidate-rows" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:Label name="lens-empty" text="Select an object in the scene or the Hierarchy to see the decisions it makes or takes part in." class="lens__hint" />
+        </ui:VisualElement>
+
+    </ui:VisualElement>
+</ui:UXML>
